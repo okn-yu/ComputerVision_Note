@@ -20,6 +20,7 @@
 
 ## 計算モデル
 ### BSDF(Bidirectional Scattering Distribution Function)
+* 双方向散乱分布関数
 * BSDF = BRDF + BTDF
 
 ### BRDF(Bidirectional Reflectance Distribution Function)
