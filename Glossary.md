@@ -10,6 +10,7 @@
 * 光の波長のうち物体内に吸収されてしまう成分も出てくるため、反射光の色合いは光源とは異なり物体固有の色合いとなる
 * 例：リンゴなら赤
 * 一般にザラザラした物体の表面で強く発生する
+* 反射光があらゆる方向に等しいと仮定した理想拡散反射をランバード反射と呼ぶ
 
 ### 鏡面反射
 * specular
@@ -18,6 +19,8 @@
 * 一般に滑らかな物体の表面で強く発生する
 
 ## 計算モデル
+### BSDF(Bidirectional Scattering Distribution Function)
+* BSDF = BRDF + BTDF
 
 ### BRDF(Bidirectional Reflectance Distribution Function)
 * 双方向反射率分布関数
@@ -37,6 +40,11 @@
 * 反射モデルの1つ
 * 入射した光が物体内部で散乱を繰り返し入射位置とは異なる位置から出射すると仮定
 * BSSRDFにおいて入射位置と射出位置が十分に近いと近似するとBRDF
+
+### BTDF(Bidirectional Transmittance Distribution Function)
+* 双方向透過率分布関数
+* 光の透過モデルの1つ
+* 透過(屈折)現象が入射点と同じ点で起こるという仮定
 
 ## CVの一般用語
 
